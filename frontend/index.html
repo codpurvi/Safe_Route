@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Route Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Safe Route Finder</h1>
+
+    <div class="input-container">
+      <label for="source">Source:</label>
+      <input type="text" id="source" placeholder="Enter source" value="Bandra" />
+
+      <label for="destination">Destination:</label>
+      <input
+        type="text"
+        id="destination"
+        placeholder="Enter destination"
+        value="Dadar"
+      />
+
+      <button id="findRoute">Find Safe Routes</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="routes"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
